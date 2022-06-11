@@ -1,7 +1,7 @@
-
+local level = printidentity()
 if not syn then
-    game.Players.LocalPlayer:Kick("Exploit not supported, Synapse X only!")
-    wait(2)
+    game.Players.LocalPlayer:Kick("Exploit not supported |  Synapse X only!")
+    wait(3)
     game:Shutdown()
 else
     messagebox("Currently Loading please wait..", "Loading...", 0)
@@ -175,6 +175,10 @@ local Tab = Window:NewTab("Games 2")
 local Section = Tab:NewSection("Scripts for games that i have made")
 
 
+
+Section:NewButton("SpellBound", "enjoy", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mbpijek1/spellbound/main/spellboundinfinite.lua"))()
+end)
 
 Section:NewButton("Magic Training, only works for whitelisted people", "flash hub", function()
 local api = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/aran1910/dsad/main/flash-hub"))()
